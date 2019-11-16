@@ -1,167 +1,308 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- generator meta tag -->
     <!-- leave this for stats and Silex version check -->
-    <meta name="generator" content="Silex v2.2.5">
+    <meta name="generator" content="Silex v2.2.5" />
     <!-- End of generator meta tag -->
     <!--CSS-->
-    <link data-silex-static="true" href="css/silex/normalize.css" rel="stylesheet">
-    <link data-silex-static="true" href="css/silex/front-end.css" rel="stylesheet">
-    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/latest/CTAT.css" rel="stylesheet">
+    <link
+      data-silex-static="true"
+      href="css/silex/normalize.css"
+      rel="stylesheet"
+    />
+    <link
+      data-silex-static="true"
+      href="css/silex/front-end.css"
+      rel="stylesheet"
+    />
+    <link
+      data-silex-static="true"
+      href="https://cdn.ctat.cs.cmu.edu/releases/latest/CTAT.css"
+      rel="stylesheet"
+    />
     <!--JS-->
-    <script data-silex-static="true" type="text/javascript" src="js/jquery.js"></script>
-    <script data-silex-static="true" type="text/javascript" src="js/jquery-ui.js"></script>
-    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/latest/ctatloader.js"></script>
-    <script data-silex-static="true" type="text/javascript" src="js/ctat/ctat_editor.min.js"></script>
+    <script
+      data-silex-static="true"
+      type="text/javascript"
+      src="js/jquery.js"
+    ></script>
+    <script
+      data-silex-static="true"
+      type="text/javascript"
+      src="js/jquery-ui.js"
+    ></script>
+    <script
+      data-silex-static="true"
+      type="text/javascript"
+      src="https://cdn.ctat.cs.cmu.edu/releases/latest/ctatloader.js"
+    ></script>
+    <script
+      data-silex-static="true"
+      type="text/javascript"
+      src="js/ctat/ctat_editor.min.js"
+    ></script>
     <script type="text/javascript" src="js/silex/mut_observer.js"></script>
     <script type="text/javascript" src="js/silex/pageable.js"></script>
     <script type="text/javascript" src="js/silex/front-end.js"></script>
 
     <style class="silex-inline-styles" type="text/css">
-        .body-initial {background-color: rgb(255, 255, 255); width: 200px; height: 200px; font-family: "Arial Black", "Arial Black", Gadget, sans-serif; font-weight: normal;
-        }
-        .silex-id-1573252742143-1 > input {
-        }
-        .silex-id-1572213890361-0 {top: 80px; left: 72px; height: 100px; width: 420px; text-align: center; font-weight: normal; font-family: "Arial Black", "Arial Black", Gadget, sans-serif; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1572126998868-1 {top: 200px; left: 60px; height: 80px; width: 300px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1572148530988-1 {top: 580px; left: 60px; height: 64px; width: 64px;
-        }
-        .silex-id-1572143445201-11 {top: 500px; left: 60px; height: 64px; width: 64px;
-        }
-        .silex-id-1572216043004-1 {top: 420px; left: 60px; height: 60px; width: 300px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1572127034941-2 {top: 300px; left: 60px; height: 100px; width: 300px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1572143447887-12 {top: 500px; left: 140px; height: 160px; width: 380px; display: flex;
-        }
-        .silex-id-1572126408628-0 {top: 0px; left: 180px; height: 60px; width: 180px; text-align: center; background-color: rgb(255, 255, 255);
-        }
-        .background-initial {background-color: rgb(255, 255, 255); top: -40px; left: 140px; width: 560px; height: 720px; background-image: url("https://s01.video.glbimg.com/x720/3069080.jpg"); background-position: 0% 0%; background-size: auto; background-repeat: repeat;
-        }
-        .silex-id-1573252742143-1 {top: 440px; left: 380px; height: 20px; width: 120px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1573694290917-0 > input {
-        }
-        .silex-id-1573694290917-0 {top: 220px; left: 380px; height: 20px; width: 120px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1573694486310-1 {top: 340px; left: 380px; height: 20px; width: 120px; background-color: rgb(255, 255, 255);
-        }
-        .silex-id-1573694486310-1 > input {
-        }
+      .body-initial {
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height: 200px;
+        font-family: "Arial Black", "Arial Black", Gadget, sans-serif;
+        font-weight: normal;
+      }
+      .silex-id-1573252742143-1 > input {
+      }
+      .silex-id-1572213890361-0 {
+        top: 80px;
+        left: 72px;
+        height: 100px;
+        width: 420px;
+        text-align: center;
+        font-weight: normal;
+        font-family: "Arial Black", "Arial Black", Gadget, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1572126998868-1 {
+        top: 200px;
+        left: 60px;
+        height: 80px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1572148530988-1 {
+        top: 580px;
+        left: 60px;
+        height: 64px;
+        width: 64px;
+      }
+      .silex-id-1572143445201-11 {
+        top: 500px;
+        left: 60px;
+        height: 64px;
+        width: 64px;
+      }
+      .silex-id-1572216043004-1 {
+        top: 420px;
+        left: 60px;
+        height: 60px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1572127034941-2 {
+        top: 300px;
+        left: 60px;
+        height: 100px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1572143447887-12 {
+        top: 500px;
+        left: 140px;
+        height: 160px;
+        width: 380px;
+        display: flex;
+      }
+      .silex-id-1572126408628-0 {
+        top: 0px;
+        left: 180px;
+        height: 60px;
+        width: 180px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+      }
+      .background-initial {
+        background-color: rgb(255, 255, 255);
+        top: -40px;
+        left: 140px;
+        width: 560px;
+        height: 720px;
+        background-image: url("https://s01.video.glbimg.com/x720/3069080.jpg");
+        background-position: 0% 0%;
+        background-size: auto;
+        background-repeat: repeat;
+      }
+      .silex-id-1573252742143-1 {
+        top: 440px;
+        left: 380px;
+        height: 20px;
+        width: 120px;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1573694290917-0 > input {
+      }
+      .silex-id-1573694290917-0 {
+        top: 220px;
+        left: 380px;
+        height: 20px;
+        width: 120px;
+        background-color: rgb(255, 255, 255);
+      }
+      .silex-id-1573933365958-0 {
+        top: 320px;
+        left: 380px;
+        height: 1.4em;
+        width: 120px;
+      }
     </style>
-
-
 
     <style type="text/css" class="silex-style"></style>
     <script type="text/notjavascript" class="silex-script"></script>
-    <meta name="interface-id" content="InterfaceCombina">
+    <meta name="interface-id" content="InterfaceCombina" />
 
-    <meta name="parent-data" content="{&quot;id&quot;:&quot;1ah3AtzWoa5vN6s6acTw32Jxau19FWEXU&quot;, &quot;path&quot;:&quot;Combinatoria/HTML/InterfaceCombina.ed.html&quot;}">
+    <meta
+      name="parent-data"
+      content='{"id":"1ah3AtzWoa5vN6s6acTw32Jxau19FWEXU", "path":"Combinatoria/HTML/InterfaceCombina.ed.html"}'
+    />
 
-
-
-
-    <meta name="asset-map" content="{}">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <meta name="asset-map" content="{}" />
 
     <style id="current-page-style">
-        .page-page-1{display:inherit; }
+      .page-page-1 {
+        display: inherit;
+      }
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-</head>
-<!--onload = "ctatOnload();"-->
+  </head>
+  <!--onload = "ctatOnload();"-->
 
-<body data-silex-id="body-initial" class="body-initial prevent-draggable silex-runtime" data-silex-type="container" onload="ctatOnload();" style="">
+  <body
+    data-silex-id="body-initial"
+    class="body-initial prevent-draggable silex-runtime"
+    data-silex-type="container"
+    onload="ctatOnload();"
+    style=""
+  >
     <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
-    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container" id="conteiner">
+    <div
+      data-silex-id="background-initial"
+      class="background background-initial editable-style container-element prevent-draggable"
+      data-silex-type="container"
+      id="conteiner"
+    >
+      <div
+        data-silex-type="text"
+        class="CTATTextField editable-style silex-id-1572126998868-1 text-element page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572126998868-1"
+        id="pergunta1"
+        data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true"
+        contenteditable="false"
+      >
+        1) Quantos números são jogados em uma aposta mínima da mega-sena?
+      </div>
+      <div
+        data-silex-type="text"
+        class="CTATTextField editable-style silex-id-1572127034941-2 text-element page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572127034941-2"
+        id="pergunta2"
+        data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true"
+        contenteditable="false"
+      >
+        2) A ordem em que os números aparecem na aposta, importam para que o
+        jogador ganhe o prêmio?
+      </div>
 
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572126998868-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572126998868-1" id="pergunta1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
-        contenteditable="false">1) Quantos números são jogados em uma aposta mínima da mega-sena?</div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572127034941-2 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572127034941-2" id="pergunta2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
-        contenteditable="false">2) A ordem em que os números aparecem na aposta, importam para que o jogador ganhe o prêmio?</div>
+      <div
+        data-silex-type="ctat"
+        id="hint"
+        class="CTATHintButton editable-style silex-id-1572143445201-11 page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572143445201-11"
+        data-ctat-component="CTATHintButton"
+        data-ctat-enabled="true"
+      ></div>
 
+      <div
+        data-silex-type="ctat"
+        id="done"
+        class="CTATDoneButton editable-style silex-id-1572148530988-1 page-page-1 paged-element CTATComponent"
+        data-ctat-tabindex="1"
+        data-silex-id="silex-id-1572148530988-1"
+        data-ctat-component="CTATDoneButton"
+        data-ctat-enabled="true"
+      ></div>
+      <div
+        data-silex-type="ctat"
+        class="CTATHintWindow editable-style silex-id-1572143447887-12 CTATComponent"
+        data-ctat-tabindex="1"
+        data-silex-id="silex-id-1572143447887-12"
+        id="ctatdiv19"
+        data-ctat-component="CTATHintWindow"
+        onkeypress="return noenter(event)"
+        data-ctat-enabled="true"
+      ></div>
 
+      <div
+        data-silex-type="text"
+        class="CTATTextField editable-style silex-id-1572216043004-1 text-element page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572216043004-1"
+        id="pergunta3"
+        data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true"
+        contenteditable="false"
+      >
+        3 ) Quantas maneiras diferentes a aposta pode ser feita?
+      </div>
 
+      <div
+        data-silex-type="ctat"
+        class="CTATTextInput editable-style silex-id-1573252742143-1 page-page-1 paged-element CTATComponent"
+        data-ctat-tabindex="1"
+        data-silex-id="silex-id-1573252742143-1"
+        id="problema3"
+        data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"
+      ></div>
+      <div
+        data-silex-type="text"
+        class="CTATTextField editable-style silex-id-1572126408628-0 text-element page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572126408628-0"
+        id="titulo1"
+        data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true"
+        contenteditable="false"
+      >
+        Analise Combinatoria
+      </div>
+      <div
+        data-silex-type="text"
+        class="CTATTextField editable-style silex-id-1572213890361-0 text-element page-page-1 paged-element CTATComponent"
+        data-silex-id="silex-id-1572213890361-0"
+        id="exemplo1"
+        data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true"
+        contenteditable="false"
+      >
+        O resultado do último sorteio da mega-sena foi a aposta ganhadora com os
+        números 04,10,26,37,47,57. De quantas maneiras possíveis distintas esse
+        aposta pode ocorrer?
+      </div>
+      <div
+        data-silex-type="ctat"
+        class="CTATTextInput editable-style silex-id-1573694290917-0 page-page-1 paged-element CTATComponent"
+        data-ctat-tabindex="1"
+        data-silex-id="silex-id-1573694290917-0"
+        id="comboPergunta1"
+        data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"
+      ></div>
 
-
-
-
-        <div data-silex-type="ctat" id="hint" class="CTATHintButton editable-style silex-id-1572143445201-11 page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572143445201-11" data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>
-
-        <div data-silex-type="ctat" id="done" class="CTATDoneButton editable-style silex-id-1572148530988-1 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1572148530988-1" data-ctat-component="CTATDoneButton" data-ctat-enabled="true"></div>
-        <div data-silex-type="ctat" class="CTATHintWindow editable-style silex-id-1572143447887-12 CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1572143447887-12" id="ctatdiv19" data-ctat-component="CTATHintWindow" onkeypress="return noenter(event)"
-        data-ctat-enabled="true"></div>
-
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572216043004-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572216043004-1" id="pergunta3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
-        contenteditable="false">3 ) Quantas maneiras diferentes a aposta pode ser feita?</div>
-
-        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1573252742143-1 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573252742143-1" id="problema3" data-ctat-component="CTATTextInput" data-ctat-enabled="true"></div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572126408628-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572126408628-0" id="titulo1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
-        contenteditable="false">Analise Combinatoria</div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572213890361-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572213890361-0" id="exemplo1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
-        contenteditable="false">O resultado do último sorteio da mega-sena foi a aposta ganhadora com os números 04,10,26,37,47,57. De quantas maneiras possíveis distintas esse aposta pode ocorrer?</div>
-        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1573694290917-0 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573694290917-0" id="comboPergunta1" data-ctat-component="CTATTextInput" data-ctat-enabled="true"></div>
-        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1573694486310-1 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573694486310-1" id="comboPergunta2" data-ctat-component="CTATTextInput"
-        data-ctat-enabled="true"></div>
+      <div
+        data-silex-type="ctat"
+        class="CTATComboBox editable-style silex-id-1573933365958-0 page-page-1 paged-element CTATComponent"
+        data-ctat-tabindex="1"
+        data-silex-id="silex-id-1573933365958-0"
+        id="comboPergunta2"
+        data-ctat-component="CTATComboBox"
+        data-ctat-enabled="true"
+        data-ctat-labels="-----,Sim,Não"
+      ></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
