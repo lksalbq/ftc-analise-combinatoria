@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="css/silex/normalize.css" rel="stylesheet">
+    <link data-silex-static="true" href="css/silex/front-end.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/latest/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript" src="js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/latest/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/ctat/ctat_editor.min.js"></script>
+    <script type="text/javascript" src="js/silex/mut_observer.js"></script>
+    <script type="text/javascript" src="js/silex/pageable.js"></script>
+    <script type="text/javascript" src="js/silex/front-end.js"></script>
+
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {background-color: rgb(255, 255, 255); text-align: center; font-weight: bold; font-style: normal;
+        }
+        .silex-id-1572441804686-2 {top: 200px; left: 40px; height: 280px; width: 460px;
+        }
+        .silex-id-1572441517357-1 {top: 80px; left: 40px; height: 100px; width: 460px; font-weight: normal;
+        }
+        .silex-id-1572441168956-0 {top: 20px; left: 120px; height: 40px; width: 300px;
+        }
+        .silex-id-1572442516258-3 {top: 500px; left: 40px; height: 80px; width: 460px; font-weight: normal;
+        }
+        .silex-id-1573057180434-14 {top: 20px; left: 100px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057191169-15 {top: 20px; left: 180px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057167762-13 {top: 20px; left: 20px; height: 64px; width: 64px;
+        }
+        .background-initial {background-color: rgb(255, 255, 255); top: 40px; left: 760px; width: 1160px; height: 1040px;
+        }
+        .silex-id-1572442767986-4 {top: 200px; left: 520px; height: 80px; width: 560px; font-weight: normal;
+        }
+        .silex-id-1573057374255-19 {top: 100px; left: 20px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057409084-20 {top: 100px; left: 100px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057416959-21 {top: 100px; left: 180px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057365780-18 {top: 20px; left: 460px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057467299-24 {top: 100px; left: 460px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057301975-17 {top: 20px; left: 380px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057461738-23 {top: 100px; left: 380px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057454857-22 {top: 100px; left: 300px; height: 64px; width: 64px;
+        }
+        .silex-id-1573057294291-16 {top: 20px; left: 300px; height: 64px; width: 64px;
+        }
+        .silex-id-1573056207547-8 {top: 960px; left: 600px; height: 40px; width: 80px;
+        }
+        .silex-id-1573062161194-0 {top: 300px; left: 520px; height: 140px; width: 480px; display: flex;
+        }
+        .silex-id-1573062170496-1 {top: 300px; left: 1020px; height: 64px; width: 64px;
+        }
+        .silex-id-1573055710635-3 {top: 580px; left: 520px; height: 180px; width: 560px; background-size: auto; background-repeat: repeat; background-position: center center;
+        }
+        .silex-id-1573063735734-3 {top: 480px; left: 520px; height: 2em; width: 100px;
+        }
+    </style>
+
+
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/notjavascript" class="silex-script"></script>
+    <meta name="interface-id" content="interfaceCasaDosPombos">
+
+    <meta name="parent-data" content="{&quot;id&quot;:&quot;1ah3AtzWoa5vN6s6acTw32Jxau19FWEXU&quot;, &quot;path&quot;:&quot;/Combinatoria/HTML/interfaceCasaDosPombos&quot;}">
+    <meta name="asset-map" content="{&quot;blob:http://cdn.ctat.cs.cmu.edu/96bbb740-f4a8-4452-b166-ec9bcf85a2cb&quot;:{&quot;name&quot;:&quot;pombos_meses2.png&quot;,&quot;id&quot;:&quot;1rintGOpK_0tIdNoFO3E5CA_B4MHNlEgc&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/0c0241bb-dfb1-41a1-9e47-60500bbb9217&quot;:{&quot;name&quot;:&quot;pombos_meses1.png&quot;,&quot;id&quot;:&quot;1WMueW3lBTyGqz_5uJD7v9LeIdsXIQKQU&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/bf09ce26-1817-4398-8001-8050865ff9b0&quot;:{&quot;name&quot;:&quot;pombos_meses3.png&quot;,&quot;id&quot;:&quot;1wjnk4EaDkb0oBPV3Wx9yOPsKW3G-1IrM&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses3.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/d96a731c-63b2-4f13-9235-c91feb110236&quot;:{&quot;name&quot;:&quot;pombos_meses4.png&quot;,&quot;id&quot;:&quot;1cePXEAXPgyvzeLnr0nduE3_lbvV2h6RB&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses4.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/08030aa9-0e9c-493c-9821-93ed74eaa54e&quot;:{&quot;name&quot;:&quot;pombos_meses6.png&quot;,&quot;id&quot;:&quot;1d8C0BWMshqPPkL39HjGPLOQl__Cjh7P7&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses6.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/b4e5324f-823c-4a15-8a39-1c9ce09942df&quot;:{&quot;name&quot;:&quot;casa_dos_pombos_2.png&quot;,&quot;id&quot;:&quot;1MYZUii_18b2QOcp1a6_QtW7cGL6yK9qc&quot;,&quot;path&quot;:&quot;Combinatoria/Images/casa_dos_pombos_2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/3c5db1c8-3dff-451a-aa9c-8e43d9bc0c23&quot;:{&quot;name&quot;:&quot;pombos_meses7.png&quot;,&quot;id&quot;:&quot;1ivE7ho5EQDLSaGoqH_MWCG5GfPATMWlt&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses7.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/7cfe2fc7-9dc5-48f1-b14f-2b04dfc10dce&quot;:{&quot;name&quot;:&quot;pombos_meses9.png&quot;,&quot;id&quot;:&quot;1qjT3w5dGCjGw40qk9fpOgRA0xvsDOfBo&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses9.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/dccfd17a-c45a-4d94-91a9-4932324fd24c&quot;:{&quot;name&quot;:&quot;pombos_meses5.png&quot;,&quot;id&quot;:&quot;1WgrLzNOU6KMhQ_ULHvXvuflygCUGVt38&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses5.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/119a1466-268c-4196-ae30-e3e0978d2164&quot;:{&quot;name&quot;:&quot;pombos_meses8.png&quot;,&quot;id&quot;:&quot;1mZK-XZgKwR2l9s3vWrdTDpra92XZZvHr&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses8.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/d323e169-ccd7-43c7-96a1-7f911d98d05c&quot;:{&quot;name&quot;:&quot;pombos_meses11.png&quot;,&quot;id&quot;:&quot;1-F6oiaupnuvSXqfUXyHxPKRSFnIC2jH0&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses11.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/fec7919e-782f-4846-9ae7-8c05a02b6d1c&quot;:{&quot;name&quot;:&quot;pombos_meses12.png&quot;,&quot;id&quot;:&quot;1eG2_2YgI6WQ1pBCceVcUVofLuauGt5f3&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses12.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/a4bcd02e-5a8e-4e37-a161-1b5e34a2bd6e&quot;:{&quot;name&quot;:&quot;pombos_meses10.png&quot;,&quot;id&quot;:&quot;1Avgsp9Qmtru9a13e68aPFiF-iJmgrzhE&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pombos_meses10.png&quot;}}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-page-1{display:inherit; }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+<!--onload = "ctatOnload();"-->
+
+<body data-silex-id="body-initial" class="body-initial prevent-draggable silex-runtime" data-silex-type="container" onload="ctatOnload();" style="">
+    <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container" id="fundo1">
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572441168956-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572441168956-0" id="ctatdiv3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Princípio Da Casa Dos Pombos</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572441517357-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572441517357-1" id="ctatdiv6" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Reza a lenda que o Alemão Johan Dirichlet notou que em seu jardim tinha três casas de pombo e quatro pombos queriam entrar nas casas, mas logo Johan percebeu que ao menos uma casa teria mais de um pombo dentro. Formou-se então o princípio da casadospombos!</div>
+        <div data-silex-type="image" class="editable-style silex-id-1572441804686-2 image-element page-page-1 paged-element" data-silex-id="silex-id-1572441804686-2"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/b4e5324f-823c-4a15-8a39-1c9ce09942df"></div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572442516258-3 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572442516258-3" id="ctatdiv7" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">De forma matemática, se temos 'n+1' pombos e 'n' casas, pelo menos uma casa terá mais de 1 pombo dentro. Tal princípio pode ser aplicado para outros problemas de lógica e matemática, por exemplo.</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1572442767986-4 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1572442767986-4" id="enunciado1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Exercício
+            <br>Qual o número mínimo de pessoas que devemos reunir para que tenhamos certeza de que duas entre elas fazem aniversário no mesmo mês?</div>
+
+
+
+
+
+
+
+
+
+
+        <div data-silex-type="container" class="container-element CTATDragNDrop editable-style silex-id-1573055710635-3 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573055710635-3" id="caixaPessoas" data-ctat-component="CTATDragNDrop"
+        name="grupo1" data-ctat-enabled="false" data-ctat-max-cardinality="12" data-ctat-tutor="false" tabindex="1">
+            <div data-silex-type="image" class="editable-style silex-id-1573057167762-13 image-element" data-silex-id="silex-id-1573057167762-13" id="ctatdiv64" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/0c0241bb-dfb1-41a1-9e47-60500bbb9217"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057180434-14 image-element" data-silex-id="silex-id-1573057180434-14" id="ctatdiv65" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/96bbb740-f4a8-4452-b166-ec9bcf85a2cb"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057191169-15 image-element" data-silex-id="silex-id-1573057191169-15" id="ctatdiv66" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/bf09ce26-1817-4398-8001-8050865ff9b0"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057294291-16 image-element" data-silex-id="silex-id-1573057294291-16" id="ctatdiv67" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/d96a731c-63b2-4f13-9235-c91feb110236"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057301975-17 image-element" data-silex-id="silex-id-1573057301975-17" id="ctatdiv68" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/dccfd17a-c45a-4d94-91a9-4932324fd24c"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057374255-19 image-element" data-silex-id="silex-id-1573057374255-19" id="ctatdiv70" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/3c5db1c8-3dff-451a-aa9c-8e43d9bc0c23"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057409084-20 image-element" data-silex-id="silex-id-1573057409084-20" id="ctatdiv71" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/119a1466-268c-4196-ae30-e3e0978d2164"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057416959-21 image-element" data-silex-id="silex-id-1573057416959-21" id="ctatdiv72" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/7cfe2fc7-9dc5-48f1-b14f-2b04dfc10dce"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057454857-22 image-element" data-silex-id="silex-id-1573057454857-22" id="ctatdiv73" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/a4bcd02e-5a8e-4e37-a161-1b5e34a2bd6e"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057365780-18 image-element" data-silex-id="silex-id-1573057365780-18" id="ctatdiv69" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/08030aa9-0e9c-493c-9821-93ed74eaa54e"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057461738-23 image-element" data-silex-id="silex-id-1573057461738-23" id="ctatdiv74" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/d323e169-ccd7-43c7-96a1-7f911d98d05c"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1573057467299-24 image-element" data-silex-id="silex-id-1573057467299-24" id="ctatdiv75" draggable="false"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/fec7919e-782f-4846-9ae7-8c05a02b6d1c"></div>
+        </div>
+
+        <div data-silex-type="ctat" class="CTATSubmitButton editable-style silex-id-1573056207547-8 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573056207547-8" id="submit" data-ctat-component="CTATSubmitButton" data-ctat-enabled="true"
+        data-ctat-label="Check" data-ctat-target="caixaCasas1,caixaCasas2"></div>
+
+
+        <div data-silex-type="ctat" class="CTATHintWindow editable-style silex-id-1573062161194-0 CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573062161194-0" id="ctatdiv26" data-ctat-component="CTATHintWindow" onkeypress="return noenter(event)"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" id="hint" class="CTATHintButton editable-style silex-id-1573062170496-1 page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1573062170496-1" data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextArea editable-style silex-id-1573063735734-3 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1573063735734-3" id="caixaMeses" data-ctat-component="CTATTextArea"
+        data-ctat-enabled="true" data-ctat-tutor="true"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
