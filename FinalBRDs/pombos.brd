@@ -234,7 +234,6 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Para usar o principio da casa dos pombos no problema, voc&#234; deve saber quem s&#227;o suas "n casas" e quem s&#227;o seus "n+1 pombos".</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -414,6 +413,7 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage>Correto! Como a superf&#237;cie do quadrado est&#225; divida em 4 (quatro) &#225;reas, usando o principio da casa dos pombos, " n casas = 4 ".</successMessage>
+            <hintMessage>Para usar o principio da casa dos pombos no problema, voc&#234; deve saber quem s&#227;o suas "n casas" e quem s&#227;o seus "n+1 pombos".</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
