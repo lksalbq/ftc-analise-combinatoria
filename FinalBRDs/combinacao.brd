@@ -1,12 +1,28 @@
 <?xml version="1.0" standalone="yes"?>
 
-<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="false" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor" outOfOrderMessage="Responda a pergunta anterior para continuar!">
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="false" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
     <startNodeMessages>
         <message>
             <verb>SendNoteProperty</verb>
             <properties>
                 <MessageType>StartProblem</MessageType>
-                <ProblemName>combina</ProblemName>
+                <ProblemName>domain</ProblemName>
+            </properties>
+        </message>
+        <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>b5be1a32-a579-d34b-8093-0719076ccb6c</transaction_id>
+                <Selection>
+                    <value>comboPergunta1</value>
+                </Selection>
+                <Action>
+                    <value>UpdateComboBox</value>
+                </Action>
+                <Input>
+                    <value>7</value>
+                </Input>
             </properties>
         </message>
         <message>
@@ -17,83 +33,67 @@
         </message>
     </startNodeMessages>
     <node locked="false" doneState="false">
-        <text>combina</text>
+        <text>domain</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>640</x>
+            <x>433</x>
             <y>30</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state2</text>
-        <uniqueID>3</uniqueID>
+        <text>state24</text>
+        <uniqueID>25</uniqueID>
         <dimension>
-            <x>648</x>
-            <y>159</y>
+            <x>910</x>
+            <y>349</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state4</text>
-        <uniqueID>5</uniqueID>
+        <text>state28</text>
+        <uniqueID>29</uniqueID>
         <dimension>
             <x>646</x>
-            <y>278</y>
+            <y>357</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state6</text>
-        <uniqueID>7</uniqueID>
+        <text>state30</text>
+        <uniqueID>31</uniqueID>
         <dimension>
-            <x>643</x>
-            <y>392</y>
+            <x>646</x>
+            <y>467</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state31</text>
+        <uniqueID>32</uniqueID>
+        <dimension>
+            <x>646</x>
+            <y>577</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state33</text>
+        <uniqueID>34</uniqueID>
+        <dimension>
+            <x>898</x>
+            <y>439</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state34</text>
+        <uniqueID>35</uniqueID>
+        <dimension>
+            <x>893</x>
+            <y>531</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>8</uniqueID>
+        <uniqueID>36</uniqueID>
         <dimension>
-            <x>642</x>
-            <y>529</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state9</text>
-        <uniqueID>10</uniqueID>
-        <dimension>
-            <x>896</x>
-            <y>281</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state10</text>
-        <uniqueID>11</uniqueID>
-        <dimension>
-            <x>892</x>
-            <y>405</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state13</text>
-        <uniqueID>14</uniqueID>
-        <dimension>
-            <x>417</x>
-            <y>88</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state15</text>
-        <uniqueID>16</uniqueID>
-        <dimension>
-            <x>896</x>
-            <y>510</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state17</text>
-        <uniqueID>18</uniqueID>
-        <dimension>
-            <x>409</x>
-            <y>220</y>
+            <x>1089</x>
+            <y>420</y>
         </dimension>
     </node>
     <edge>
@@ -101,35 +101,36 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>4</uniqueID>
+            <uniqueID>80</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>78551c24-323b-61dc-c988-a8691537b46f</transaction_id>
+                    <transaction_id>4b7c3e98-1e61-4af8-8983-4a45815b0ea1</transaction_id>
                     <Selection>
-                        <value>comboPergunta1</value>
+                        <value>problema3</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
                     </Action>
                     <Input>
-                        <value>6</value>
+                        <value></value>
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! Perceba que a aposta vencedora tem exatamente 6 n&#250;meros: 04,10,26,37,47,57</successMessage>
-            <hintMessage>Quantos n&#250;meros tem na aposta vencedora?</hintMessage>
+            <buggyMessage>Lembre-se de usar as dicas em conjunto com o material disponibilizado pelo professor para descobrir a resposta.</buggyMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
+            <actionType>Fireable Buggy Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">comboPergunta1</matcherParameter>
+                        <matcherParameter name="single">problema3</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -140,8 +141,7 @@
                 </Action>
                 <Input>
                     <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">6</matcherParameter>
+                        <matcherType>AnyMatcher</matcherType>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -152,83 +152,21 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>1</sourceID>
-        <destID>3</destID>
+        <sourceID>29</sourceID>
+        <destID>31</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>11</uniqueID>
+            <uniqueID>83</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>f80017fe-e586-158f-8a24-994fc36f25bc</transaction_id>
-                    <Selection>
-                        <value>comboPergunta2</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateComboBox</value>
-                    </Action>
-                    <Input>
-                        <value>N&#227;o</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! a ordem dos n&#250;meros na aposta n&#227;o importa, apenas acertar os n&#250;meros!</successMessage>
-            <hintMessage>Se aposta 04,10,26,37,47,57 informada pelo problema fosse invertida: 57,47,37,26,10,04 ainda seria vencedora?</hintMessage>
-            <hintMessage>Se duas pessoas jogassem o mesmo jogo, mas com a ordem diferente, ambas seriam ganhadoras?</hintMessage>
-            <hintMessage>A ordem n&#227;o importa, basta que acertar os n&#250;meros!</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">comboPergunta2</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">N&#227;o</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>3</sourceID>
-        <destID>5</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>18</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>24ad9ed9-0f0a-b782-7d56-3b7b2c55a8ee</transaction_id>
+                    <transaction_id>dfd273c8-075c-198a-3405-2aa83c2f8036</transaction_id>
                     <Selection>
                         <value>problema3</value>
                     </Selection>
@@ -236,13 +174,74 @@
                         <value>UpdateTextField</value>
                     </Action>
                     <Input>
-                        <value>720</value>
+                        <value></value>
                     </Input>
                 </properties>
             </message>
+            <buggyMessage>Utilize as dicas dadas. Junto ao material disponibilizado pelo professor devem ser suficientes para sanar as suas d&#250;vidas.</buggyMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Untraceable Error</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>31</sourceID>
+        <destID>32</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>87</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>CorrectAction</MessageType>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>627264</value>
+                    </Input>
+                    <transaction_id>a8b9c2ab-baab-65fa-903b-06d6e7dc4813</transaction_id>
+                </properties>
+            </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! Perceba que a permuta&#231;&#227;o p=n! &#233; : p = 6! = 720 maneiras!</successMessage>
-            <hintMessage>A quantidade de elementos &#233; igual a quantidade de casas procuradas, pois queremos saber de quantas formas uma aposta de 6 n&#250;meros pode ser formada, sendo que a ordem dos mesmos n&#227;o importa. Temos um problema de PERMUTA&#199;&#195;O.</hintMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -263,7 +262,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">720</matcherParameter>
+                        <matcherParameter name="single">627264</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -274,8 +273,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>5</sourceID>
-        <destID>7</destID>
+        <sourceID>29</sourceID>
+        <destID>34</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -283,12 +282,73 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>20</uniqueID>
+            <uniqueID>96</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>CorrectAction</MessageType>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>627264</value>
+                    </Input>
+                    <transaction_id>a8b9c2ab-baab-65fa-903b-06d6e7dc4813</transaction_id>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">627264</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>31</sourceID>
+        <destID>35</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>98</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>f3e63080-ec31-ca67-b3fe-6e209a9b8032</transaction_id>
+                    <transaction_id>046040a8-ba6d-3c3b-d712-ddb99c7dbb93</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -334,54 +394,56 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>7</sourceID>
-        <destID>8</destID>
+        <sourceID>25</sourceID>
+        <destID>36</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>32</uniqueID>
+            <uniqueID>100</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>c6a55341-b38b-5526-8f10-0756e52ce2a0</transaction_id>
+                    <transaction_id>b8ca9ca5-a80d-1c5c-e428-07186538910f</transaction_id>
                     <Selection>
-                        <value>problema3</value>
+                        <value>done</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>ButtonPressed</value>
                     </Action>
                     <Input>
-                        <value></value>
+                        <value>-1</value>
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>Incorreto! A quantidade de elementos &#233; igual a quantidade de casas procuradas, pois queremos saber de quantas formas uma aposta de 6 n&#250;meros pode ser formada, sendo que a ordem dos mesmos n&#227;o importa. Temos um problema de PERMUTA&#199;&#195;O.</buggyMessage>
+            <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Fireable Buggy Action</actionType>
+            <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">problema3</matcherParameter>
+                        <matcherParameter name="single">done</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
-                        <matcherType>AnyMatcher</matcherType>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -392,8 +454,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>5</sourceID>
-        <destID>10</destID>
+        <sourceID>34</sourceID>
+        <destID>36</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -401,12 +463,72 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>37</uniqueID>
+            <uniqueID>102</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>64c726f8-004c-3c5b-9c7d-020b58ed2837</transaction_id>
+                    <transaction_id>1a7bbf3a-3ed1-c8e9-a20f-90ee6234534a</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>35</sourceID>
+        <destID>36</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>58</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>aeef69af-d6e1-dd1c-36ce-b6b584385e66</transaction_id>
                     <Selection>
                         <value>problema3</value>
                     </Selection>
@@ -414,12 +536,14 @@
                         <value>UpdateTextField</value>
                     </Action>
                     <Input>
-                        <value>720</value>
+                        <value>627264</value>
                     </Input>
                 </properties>
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! Perceba que a permuta&#231;&#227;o p=n! &#233; : p = 6! = 720 maneiras distintas!</successMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -440,7 +564,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">720</matcherParameter>
+                        <matcherParameter name="single">627264</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -451,8 +575,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>10</sourceID>
-        <destID>7</destID>
+        <sourceID>1</sourceID>
+        <destID>25</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -460,12 +584,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>40</uniqueID>
+            <uniqueID>75</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>543b976f-504e-b608-b036-ebdeb32320fb</transaction_id>
+                    <transaction_id>5212a568-c238-dca0-45fb-23288b14b161</transaction_id>
                     <Selection>
                         <value>problema3</value>
                     </Selection>
@@ -477,9 +601,10 @@
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>Incorreto! Como temos uma permuta&#231;&#227;o, a f&#243;rmula desejada &#233;: p=n!</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please enter '5348' in the highlighted field.</hintMessage>
+            <buggyMessage>Resposta errada! Utilize o material disponibilizado pelo professor e o bot&#227;o de dicas(use moderadamente).</buggyMessage>
+            <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
+            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Fireable Buggy Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -489,123 +614,6 @@
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
                         <matcherParameter name="single">problema3</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>AnyMatcher</matcherType>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>10</sourceID>
-        <destID>11</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>42</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>3c0e5da7-ee5f-66a5-5851-5c47b549c68d</transaction_id>
-                    <Selection>
-                        <value>problema3</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value>720</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! Perceba que a permuta&#231;&#227;o p=n! &#233; : p = 6! = 720 maneiras distintas!</successMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">problema3</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">720</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>11</sourceID>
-        <destID>7</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>22</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>a4dc9664-35e2-c016-57da-4960eb77f3c5</transaction_id>
-                    <Selection>
-                        <value>comboPergunta1</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value></value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>Incorreto! Quantos n&#250;meros tem na aposta vencedora?</buggyMessage>
-            <successMessage></successMessage>
-            <callbackFn></callbackFn>
-            <actionType>Untraceable Error</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">comboPergunta1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -628,187 +636,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>14</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>44</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>b777ae22-5cd4-1aad-7432-d0519a111efd</transaction_id>
-                    <Selection>
-                        <value>problema3</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value></value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>Incorreto! use a permuta&#231;&#227;o p = 6!</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please enter '999' in the highlighted field.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Untraceable Error</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">problema3</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>AnyMatcher</matcherType>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>11</sourceID>
-        <destID>16</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>68</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>398c6785-f5b7-6a7e-1470-3a6ffb8f173d</transaction_id>
-                    <Selection>
-                        <value>comboPergunta2</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateComboBox</value>
-                    </Action>
-                    <Input>
-                        <value>Sim</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>Se aposta 04,10,26,37,47,57 informada pelo problema fosse invertida: 57,47,37,26,10,04 ainda seria vencedora?</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>1Se aposta 04,10,26,37,47,57 informada pelo problema fosse invertida: 57,47,37,26,10,04 ainda seria vencedora?</hintMessage>
-            <hintMessage>2Se duas pessoas jogassem o mesmo jogo, mas com a ordem diferente, ambas seriam ganhadoras?</hintMessage>
-            <hintMessage>3A ordem n&#227;o importa, basta que acertar os n&#250;meros!</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Fireable Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">comboPergunta2</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">Sim</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>3</sourceID>
-        <destID>18</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>76</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>09fb5c86-3da1-b6a0-0db0-284ec73dbb54</transaction_id>
-                    <Selection>
-                        <value>comboPergunta2</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateComboBox</value>
-                    </Action>
-                    <Input>
-                        <value>N&#227;o</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage>Correto! A ordem n&#227;o importa, apenas importa que acerte os n&#250;meros!</successMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">comboPergunta2</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">N&#227;o</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>18</sourceID>
-        <destID>5</destID>
+        <destID>29</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>

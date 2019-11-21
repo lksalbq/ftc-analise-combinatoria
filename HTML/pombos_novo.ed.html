@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="css/silex/normalize.css" rel="stylesheet">
+    <link data-silex-static="true" href="css/silex/front-end.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/latest/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript" src="js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/latest/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/ctat/ctat_editor.min.js"></script>
+    <script type="text/javascript" src="js/silex/mut_observer.js"></script>
+    <script type="text/javascript" src="js/silex/pageable.js"></script>
+    <script type="text/javascript" src="js/silex/front-end.js"></script>
+
+    <style class="silex-inline-styles" type="text/css">
+        .silex-id-1574050946521-23 {top: 0px; left: 260px; height: 240px; width: 180px;
+        }
+        .silex-id-1574046697717-3 {top: 0px; left: -20px; height: 248px; width: 249px;
+        }
+        .silex-id-1574051150571-26 {top: 20px; left: 100px; height: 60px; width: 60px;
+        }
+        .silex-id-1574051990672-30 {top: 180px; left: 40px; height: 200px; width: 480px;
+        }
+        .silex-id-1574046820152-5 {top: 560px; left: 160px; height: 2em; width: 100px;
+        }
+        .silex-id-1574046823097-6 {top: 640px; left: 160px; height: 2em; width: 100px;
+        }
+        .silex-id-1574266010058-0 {top: 400px; left: 40px; height: 140px; width: 480px;
+        }
+        .silex-id-1574274174313-1 {top: 40px; left: 20px; height: 100px; width: 480px;
+        }
+        .silex-id-1574052046974-31 {top: 180px; left: 94px; height: 120px; width: 282px;
+        }
+        .body-initial {background-color: rgb(255, 255, 255); background-image: url("blob:http://cdn.ctat.cs.cmu.edu/96b58ba9-0efa-4e77-a117-0bacc6913a62"); background-size: auto; background-position: 0% 0%; background-repeat: repeat;
+        }
+        .background-initial {background-color: transparent; top: 5px; left: 140px; width: 564px; height: 1095px;
+        }
+        .silex-id-1574046585770-1 {top: 40px; left: 40px; height: 100px; width: 480px; background-color: rgb(255, 255, 255);
+        }
+        .silex-id-1574275460791-3 {top: 720px; left: 40px; height: 100px; width: 480px; background-color: rgb(143, 255, 127);
+        }
+        .silex-id-1574046883943-7 {top: 560px; left: 40px; height: 40px; width: 100px; border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);
+        }
+        .silex-id-1574046899510-9 {top: 640px; left: 40px; height: 40px; width: 100px; background-color: rgb(255, 255, 255);
+        }
+    </style>
+
+
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/notjavascript" class="silex-script"></script>
+    <meta name="interface-id" content="pombos_novo">
+
+    <meta name="asset-map" content="{&quot;blob:http://cdn.ctat.cs.cmu.edu/6efe7945-4100-4be7-90d3-ef79b4b2fe6f&quot;:{&quot;name&quot;:&quot;1.png&quot;,&quot;id&quot;:&quot;1LATuHifitWkWtyYpHEuOqrmfYl4wOxP-&quot;,&quot;path&quot;:&quot;Combinatoria/Images/1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/21102ca1-6b11-4660-8313-38cbf71d9808&quot;:{&quot;name&quot;:&quot;pcb1.png&quot;,&quot;id&quot;:&quot;13oYSojE0z2ocnyLB36xmj4oom6EtDkWS&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/db71c757-64ca-4bd0-8b64-9039ce5c74df&quot;:{&quot;name&quot;:&quot;pcb2.png&quot;,&quot;id&quot;:&quot;1uHZHy_zeOtfQ5Ytla2QMkj-xs1GCcyNB&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/e92bea6d-6bf7-46a0-b0a5-950faf102fcf&quot;:{&quot;name&quot;:&quot;pcb2.png&quot;,&quot;id&quot;:&quot;1uHZHy_zeOtfQ5Ytla2QMkj-xs1GCcyNB&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/db54c501-def3-44a5-b1fd-e076d7657154&quot;:{&quot;name&quot;:&quot;pcb1.png&quot;,&quot;id&quot;:&quot;13oYSojE0z2ocnyLB36xmj4oom6EtDkWS&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/181159fa-d378-438d-a2ea-76c91f2f37c5&quot;:{&quot;name&quot;:&quot;1.png&quot;,&quot;id&quot;:&quot;1LATuHifitWkWtyYpHEuOqrmfYl4wOxP-&quot;,&quot;path&quot;:&quot;Combinatoria/Images/1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/095488dd-37d0-4cd8-b59e-decd19301871&quot;:{&quot;name&quot;:&quot;pcb2.png&quot;,&quot;id&quot;:&quot;1uHZHy_zeOtfQ5Ytla2QMkj-xs1GCcyNB&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/ef41ac3b-b5e2-406b-9f7a-2c507430edc4&quot;:{&quot;name&quot;:&quot;pcb1.png&quot;,&quot;id&quot;:&quot;13oYSojE0z2ocnyLB36xmj4oom6EtDkWS&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb1.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/f548c26a-b0e2-41ef-81dd-f0a4ddfbae73&quot;:{&quot;name&quot;:&quot;pcb2.png&quot;,&quot;id&quot;:&quot;1uHZHy_zeOtfQ5Ytla2QMkj-xs1GCcyNB&quot;,&quot;path&quot;:&quot;Combinatoria/Images/pcb2.png&quot;},&quot;blob:http://cdn.ctat.cs.cmu.edu/96b58ba9-0efa-4e77-a117-0bacc6913a62&quot;:{&quot;name&quot;:&quot;Pombo.jpg&quot;,&quot;id&quot;:&quot;1NWK2XxmSmWrtS0mwE9466WMU-YWaqqBs&quot;,&quot;path&quot;:&quot;Combinatoria/HTML/Assets/Pombo.jpg&quot;}}">
+    <meta name="parent-data" content="{&quot;id&quot;:&quot;1ah3AtzWoa5vN6s6acTw32Jxau19FWEXU&quot;, &quot;path&quot;:&quot;Combinatoria/HTML/pombos_novo.ed.html&quot;}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-page-1{display:inherit; }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+<!--onload = "ctatOnload();"-->
+
+<body data-silex-id="body-initial" class="body-initial prevent-draggable silex-runtime" data-silex-type="container" onload="ctatOnload();" style="">
+    <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1574046585770-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1574046585770-1" id="ctatdiv3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">São escolhidos cinco pontos, ao acaso, sobre a superfície de um quadrado de lado 2. Mostre que pelo menos um dos segmentos determinados por dois desses pontos tem comprimento, no máximo, igual a √2.</div>
+
+
+        <div data-silex-type="ctat" class="CTATTextArea editable-style silex-id-1574046820152-5 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1574046820152-5" id="campoCasas" data-ctat-component="CTATTextArea" data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextArea editable-style silex-id-1574046823097-6 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1574046823097-6" id="campoPombos" data-ctat-component="CTATTextArea" data-ctat-enabled="true"></div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1574046883943-7 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1574046883943-7" id="casas" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Casas</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1574046899510-9 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1574046899510-9" id="pombos" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Pombos</div>
+
+        <div data-silex-type="image" class="editable-style silex-id-1574051990672-30 image-element page-page-1 paged-element" data-silex-id="silex-id-1574051990672-30"><img class="silex-element-content" src="blob:http://cdn.ctat.cs.cmu.edu/db54c501-def3-44a5-b1fd-e076d7657154"></div>
+
+        <div data-silex-type="ctat" class="CTATHintWidget undefined editable-style silex-id-1574266010058-0 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1574266010058-0">
+            <table style="width: 100%; height: 100%;">
+                <tbody>
+                    <tr height="125">
+                        <td>
+                            <div class="CTATHintWindow CTATComponent" id="ctatdiv27" data-ctat-component="CTATHintWindow" onkeypress="return noenter(event)" data-ctat-enabled="true"></div>
+                        </td>
+                        <td style="padding-top: 0px; padding-bottom: 0px;" width="64">
+                            <div id="hint" style="margin-bottom: 2px" class="CTATHintButton CTATComponent" data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>
+                            <div id="done" class="CTATDoneButton CTATComponent" data-ctat-component="CTATDoneButton" data-ctat-enabled="true"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1574275460791-3 text-element page-page-1 paged-element CTATComponent CTAT-button" data-silex-id="silex-id-1574275460791-3" id="texto" data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true" contenteditable="false" data-ctat-tutor="true" data-ctat-show-hint-highlight="true">Perceba que usando o teorema de Pitágoras, temos raiz(2) o tamanho máximo de segmento de reta em qualquer área divida do quadrado. Pelo princípio da casa dos pombos, você terá 2 pontos em alguma das áreas, logo o segmento de reta desses pontosterátamanho
+            de no máximo raiz(2).</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

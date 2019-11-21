@@ -9,12 +9,12 @@
     <!--CSS-->
     <link
       data-silex-static="true"
-      href="css/silex/normalize.css"
+      href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/normalize.css"
       rel="stylesheet"
     />
     <link
       data-silex-static="true"
-      href="css/silex/front-end.css"
+      href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/front-end.css"
       rel="stylesheet"
     />
     <link
@@ -26,12 +26,12 @@
     <script
       data-silex-static="true"
       type="text/javascript"
-      src="js/jquery.js"
+      src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery.js"
     ></script>
     <script
       data-silex-static="true"
       type="text/javascript"
-      src="js/jquery-ui.js"
+      src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery-ui.js"
     ></script>
     <script
       data-silex-static="true"
@@ -41,93 +41,25 @@
     <script
       data-silex-static="true"
       type="text/javascript"
-      src="js/ctat/ctat_editor.min.js"
+      src="https://cdn.ctat.cs.cmu.edu/html-editor/js/ctat/ctat.min.js"
     ></script>
-    <script type="text/javascript" src="js/silex/mut_observer.js"></script>
-    <script type="text/javascript" src="js/silex/pageable.js"></script>
-    <script type="text/javascript" src="js/silex/front-end.js"></script>
 
-    <style class="silex-inline-styles" type="text/css">
-      .background-initial {
-        background-color: transparent;
-        top: -40px;
-        left: 140px;
-        width: 560px;
-        height: 600px;
-        background-size: auto;
-        background-position: 0% 0%;
-        background-repeat: repeat;
+    <script>
+      var myVars = {
+        question_file: "../FinalBRDs/combinacao.brd",
+        tutoring_service_communication: "javascript"
+      };
+
+      // The CTAT JavaScript code looks for a ctatOnload() function and
+      // executes it automatically if it is defined in your tutor.
+      function ctatOnload() {
+        initTutor(myVars);
       }
-      .silex-id-1572143445201-11 > button {
-        border-radius: 7px;
-        background-color: rgb(255, 255, 255);
-      }
-      .silex-id-1572143447887-12 {
-        top: 360px;
-        left: 100px;
-        height: 160px;
-        width: 380px;
-        display: flex;
-      }
-      .silex-id-1572148530988-1 {
-        top: 460px;
-        left: 20px;
-        height: 64px;
-        width: 64px;
-      }
-      .silex-id-1572143445201-11 {
-        top: 360px;
-        left: 20px;
-        height: 64px;
-        width: 64px;
-      }
-      .silex-id-1573252742143-1 {
-        top: 220px;
-        left: 180px;
-        height: 60px;
-        width: 160px;
-        background-color: rgb(255, 255, 255);
-        font-size: 32px;
-      }
-      .silex-id-1573252742143-1 > input {
-        text-align: center;
-      }
-      .silex-id-1572213890361-0 {
-        top: 20px;
-        left: 60px;
-        height: 120px;
-        width: 400px;
-        text-align: center;
-        font-weight: normal;
-        font-family: "Arial Black", "Arial Black", Gadget, sans-serif;
-        background-color: rgb(255, 255, 255);
-      }
-      .body-initial {
-        background-color: rgb(170, 170, 170);
-        width: 200px;
-        height: 200px;
-        font-family: "Arial Black", "Arial Black", Gadget, sans-serif;
-        font-weight: normal;
-        background-image: url("blob:http://cdn.ctat.cs.cmu.edu/55f73977-e0da-4539-bb14-0ce21f84a87d");
-        background-size: auto;
-        background-position: 0% 0%;
-        background-repeat: repeat;
-      }
-    </style>
+    </script>
 
     <style type="text/css" class="silex-style"></style>
-    <script type="text/notjavascript" class="silex-script"></script>
-    <meta name="interface-id" content="InterfaceCombina" />
 
-    <meta
-      name="parent-data"
-      content='{"id":"1ah3AtzWoa5vN6s6acTw32Jxau19FWEXU", "path":"Combinatoria/HTML/InterfaceCombina.ed.html"}'
-    />
-
-    <meta
-      name="asset-map"
-      content='{"blob:http://cdn.ctat.cs.cmu.edu/55f73977-e0da-4539-bb14-0ce21f84a87d":{"name":"Loteria.jpg","id":"1k2FHSt9Cw7URcH7QXYoInFQSgZ1et7ec","path":"Combinatoria/HTML/Assets/Loteria.jpg"}}'
-    />
+    <meta name="interface-id" content="Combinação" />
 
     <style id="current-page-style">
       .page-page-1 {
@@ -136,16 +68,10 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
+    <link rel="stylesheet" href="Assets/Combinação-styles.css" />
   </head>
-  <!--onload = "ctatOnload();"-->
 
-  <body
-    data-silex-id="body-initial"
-    class="body-initial prevent-draggable silex-runtime"
-    data-silex-type="container"
-    onload="ctatOnload();"
-    style=""
-  >
+  <body class="body-initial prevent-draggable silex-runtime silex-published">
     <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
     <div
       data-silex-id="background-initial"
@@ -201,9 +127,10 @@
         data-ctat-enabled="true"
         contenteditable="false"
       >
-        O resultado do último sorteio da Mega-Sena foi a aposta ganhadora com os
-        números 04,10,26,37,47,57. De quantas maneiras distintas esse aposta
-        ganhadora pode ser obtida?
+        No esporte Futsal, cada partida envolve dois times adversários, onde
+        cada um pode ter 5 jogadores na linha e 7 jogadores reservas. Em uma
+        partida, quantas escalações diferentes para o time titular podemos ter
+        em campo, desconsiderando as posições dos jogadores?
       </div>
     </div>
   </body>

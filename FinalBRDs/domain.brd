@@ -151,7 +151,7 @@
                         <value>comboPergunta1</value>
                     </Selection>
                     <Action>
-                        <value>UpdateComboBox</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value>6</value>
@@ -174,7 +174,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -210,7 +210,7 @@
                         <value>comboPergunta2</value>
                     </Selection>
                     <Action>
-                        <value>UpdateComboBox</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value>Nao</value>
@@ -233,7 +233,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -449,7 +449,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value>720</value>
@@ -462,13 +462,27 @@
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
-            <matcher>
-                <matcherType>ExactMatcher</matcherType>
-                <matcherParameter name="selection">problema3</matcherParameter>
-                <matcherParameter name="action">UpdateTextField</matcherParameter>
-                <matcherParameter name="input">720</matcherParameter>
-                <matcherParameter name="actor">Student</matcherParameter>
-            </matcher>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">720</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
         </actionLabel>
         <preCheckedStatus>No-Applicable</preCheckedStatus>
         <rule>
@@ -494,7 +508,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value></value>
@@ -518,7 +532,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -553,7 +567,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value></value>
@@ -579,7 +593,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -614,7 +628,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value></value>
@@ -638,7 +652,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -672,7 +686,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value>720</value>
@@ -696,7 +710,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
@@ -731,7 +745,7 @@
                         <value>problema3</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateText</value>
                     </Action>
                     <Input>
                         <value>720</value>
@@ -755,7 +769,7 @@
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateText</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>

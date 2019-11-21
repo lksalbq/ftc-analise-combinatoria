@@ -1,0 +1,630 @@
+<?xml version="1.0" standalone="yes"?>
+
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="false" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+    <startNodeMessages>
+        <message>
+            <verb>SendNoteProperty</verb>
+            <properties>
+                <MessageType>StartProblem</MessageType>
+                <ProblemName>domain</ProblemName>
+            </properties>
+        </message>
+        <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>b5be1a32-a579-d34b-8093-0719076ccb6c</transaction_id>
+                <Selection>
+                    <value>comboPergunta1</value>
+                </Selection>
+                <Action>
+                    <value>UpdateComboBox</value>
+                </Action>
+                <Input>
+                    <value>7</value>
+                </Input>
+            </properties>
+        </message>
+        <message>
+            <verb>SendNoteProperty</verb>
+            <properties>
+                <MessageType>StartStateEnd</MessageType>
+            </properties>
+        </message>
+    </startNodeMessages>
+    <node locked="false" doneState="false">
+        <text>domain</text>
+        <uniqueID>1</uniqueID>
+        <dimension>
+            <x>433</x>
+            <y>30</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state24</text>
+        <uniqueID>25</uniqueID>
+        <dimension>
+            <x>910</x>
+            <y>349</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state28</text>
+        <uniqueID>29</uniqueID>
+        <dimension>
+            <x>646</x>
+            <y>357</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state30</text>
+        <uniqueID>31</uniqueID>
+        <dimension>
+            <x>646</x>
+            <y>467</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state31</text>
+        <uniqueID>32</uniqueID>
+        <dimension>
+            <x>646</x>
+            <y>577</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state33</text>
+        <uniqueID>34</uniqueID>
+        <dimension>
+            <x>898</x>
+            <y>439</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state34</text>
+        <uniqueID>35</uniqueID>
+        <dimension>
+            <x>893</x>
+            <y>531</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="true">
+        <text>Done</text>
+        <uniqueID>36</uniqueID>
+        <dimension>
+            <x>1089</x>
+            <y>420</y>
+        </dimension>
+    </node>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>80</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>4b7c3e98-1e61-4af8-8983-4a45815b0ea1</transaction_id>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value></value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>A ordem de retirada dos n&#250;meros da urna n&#227;o importa. O fatorial de um n&#250;mero pode resolver essa quest&#227;o. Se ainda tiver d&#250;vidas, procure pelas respostas no material disponibilizado pelo professor e use moderadamente as dicas.</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720</successMessage>
+            <hintMessage>Please enter '720' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Fireable Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>29</sourceID>
+        <destID>31</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>83</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>dfd273c8-075c-198a-3405-2aa83c2f8036</transaction_id>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value></value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Ap&#243;s a retirada de uma bola temos uma possibilidade a menos. A possibilidade seguinte &#233; somada a anterior ou &#233; multiplicada?</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720</successMessage>
+            <hintMessage>Please enter '720' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Untraceable Error</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>31</sourceID>
+        <destID>32</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>87</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>CorrectAction</MessageType>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>720</value>
+                    </Input>
+                    <transaction_id>a8b9c2ab-baab-65fa-903b-06d6e7dc4813</transaction_id>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720 maneiras distintas de apostas!</successMessage>
+            <hintMessage>A ordem n&#227;o importa, visto que os n&#250;meros sempre s&#227;o considerados em ordem crescente</hintMessage>
+            <hintMessage>Se a ordem n&#227;o importa, temos um arranjo, uma permuta&#231;&#227;o ou combina&#231;&#227;o?</hintMessage>
+            <hintMessage>A cada bola retirada da urna, temos menos uma possibilidade ao retirar a pr&#243;xima bola</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">720</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>29</sourceID>
+        <destID>34</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>96</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>CorrectAction</MessageType>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>720</value>
+                    </Input>
+                    <transaction_id>a8b9c2ab-baab-65fa-903b-06d6e7dc4813</transaction_id>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720 maneiras distintas de apostas!</successMessage>
+            <hintMessage>Quantos n&#250;meros comp&#245;em uma aposta da Mega?</hintMessage>
+            <hintMessage>Quantos n&#250;meros diferentes a aposta vencedora no enunciado cont&#233;m? N&#227;o pense nos n&#250;meros retirados em si, mas em quantos n&#250;meros s&#227;o retirados da urna.</hintMessage>
+            <hintMessage>Ap&#243;s retirarmos um dos n&#250;meros da aposta, teremos um a menos na pr&#243;xima retirada, primeiro temos 6 possibilidades para retirar, E depois disso temos 5, E em seguida 4...</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">720</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>31</sourceID>
+        <destID>35</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>98</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>046040a8-ba6d-3c3b-d712-ddb99c7dbb93</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>25</sourceID>
+        <destID>36</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>100</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>b8ca9ca5-a80d-1c5c-e428-07186538910f</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>34</sourceID>
+        <destID>36</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>102</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>1a7bbf3a-3ed1-c8e9-a20f-90ee6234534a</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>35</sourceID>
+        <destID>36</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>58</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>aeef69af-d6e1-dd1c-36ce-b6b584385e66</transaction_id>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>720</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720 maneiras distintas de apostas!</successMessage>
+            <hintMessage>A ordem com que cada n&#250;mero &#233; retirado da urna importa?</hintMessage>
+            <hintMessage>Os n&#250;meros obtidos na urna compoem a aposta vencedora em ordem crescente, em todos os casos</hintMessage>
+            <hintMessage>Se temos uma ordem fixa para a apresenta&#231;&#227;o dos n&#250;meros, a ordem n&#227;o deve importar.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matcher>
+                <matcherType>ExactMatcher</matcherType>
+                <matcherParameter name="selection">problema3</matcherParameter>
+                <matcherParameter name="action">UpdateTextField</matcherParameter>
+                <matcherParameter name="input">720</matcherParameter>
+                <matcherParameter name="actor">Student</matcherParameter>
+            </matcher>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>25</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>75</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>5212a568-c238-dca0-45fb-23288b14b161</transaction_id>
+                    <Selection>
+                        <value>problema3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value></value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Resposta errada! Utilize o material disponibilizado pelo professor e o bot&#227;o de dicas(use moderadamente).</buggyMessage>
+            <successMessage>Correto! Note que: p = 6! = 720</successMessage>
+            <hintMessage>Please enter '720' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Fireable Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">problema3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>29</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <EdgesGroups ordered="true"></EdgesGroups>
+</stateGraph>
+
