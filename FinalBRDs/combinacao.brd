@@ -240,8 +240,9 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
-            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
-            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
+            <hintMessage>A ordem da escala&#231;&#227;o n&#227;o importa, j&#225; que cada jogador pode ser colocado em qualquer posi&#231;&#227;o</hintMessage>
+            <hintMessage>Se a ordem n&#227;o importa, temos arranjo, permuta&#231;&#227;o ou combina&#231;&#227;o?</hintMessage>
+            <hintMessage>A escala&#231;&#227;o de cada time independe da do outro</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -301,8 +302,10 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage>Correto! Temos a multiplica&#231;&#227;o das combina&#231;&#245;es dos dois times.</successMessage>
-            <hintMessage>Lembre-se, temos dois times distintos em campo!</hintMessage>
-            <hintMessage>A ordem da escala&#231;&#227;o importa, uma vez que os jogadores n&#227;o se importam com a posi&#231;&#227;o em que forem escalados?</hintMessage>
+            <hintMessage>A ordem de escala&#231;&#227;o n&#227;o importa e cada time tem uma escala&#231;&#227;o independente, n&#227;o &#233; poss&#237;vel responder com apenas um arranjo, permuta&#231;&#227;o ou combina&#231;&#227;o</hintMessage>
+            <hintMessage>Temos duas combina&#231;&#245;es, onde "n" &#233; o n&#250;mero total de jogadores de cada time e "p" &#233; o n&#250;mero de jogadores escalados por cada um.</hintMessage>
+            <hintMessage>As possibilidades de escala&#231;&#227;o de um time E do advers&#225;rio devem ser consideradas, pois ambos est&#227;o em campo?</hintMessage>
+            <hintMessage>Lembre-se do Princ&#237;pio Fundamental da Contagem e associe com as dicas anteriores.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>

@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes"?>
 
-<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="true" lockWidget="false" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="true" lockWidget="false" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor" outOfOrderMessage="Responda a quest&#227;o anterior!">
     <startNodeMessages>
         <message>
             <verb>SendNoteProperty</verb>
@@ -36,56 +36,64 @@
         <text>pombos</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>952</x>
-            <y>29</y>
+            <x>673</x>
+            <y>19</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state10</text>
         <uniqueID>11</uniqueID>
         <dimension>
-            <x>1202</x>
-            <y>158</y>
+            <x>699</x>
+            <y>306</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state11</text>
         <uniqueID>12</uniqueID>
         <dimension>
-            <x>1203</x>
-            <y>284</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state13</text>
-        <uniqueID>14</uniqueID>
-        <dimension>
-            <x>1209</x>
-            <y>403</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state14</text>
-        <uniqueID>15</uniqueID>
-        <dimension>
-            <x>906</x>
-            <y>170</y>
+            <x>700</x>
+            <y>432</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state15</text>
         <uniqueID>16</uniqueID>
         <dimension>
-            <x>1204</x>
-            <y>522</y>
+            <x>692</x>
+            <y>545</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>17</uniqueID>
+        <uniqueID>20</uniqueID>
         <dimension>
-            <x>1213</x>
-            <y>645</y>
+            <x>935</x>
+            <y>544</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state20</text>
+        <uniqueID>21</uniqueID>
+        <dimension>
+            <x>552</x>
+            <y>127</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state22</text>
+        <uniqueID>23</uniqueID>
+        <dimension>
+            <x>475</x>
+            <y>242</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state23</text>
+        <uniqueID>24</uniqueID>
+        <dimension>
+            <x>1005</x>
+            <y>426</y>
         </dimension>
     </node>
     <edge>
@@ -113,7 +121,7 @@
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage>Correto! Como voc&#234; tem 5 pontos para distribuir no quadrado, usando o principio da casa dos pombos, "n+1 pombos = 5".</successMessage>
             <hintMessage>Quem s&#227;o seus "n+1 pombos" ?</hintMessage>
-            <hintMessage>Quantos pontos s&#227;o possiveis de se colocar na superficie do quadrado?</hintMessage>
+            <hintMessage>Quantos pontos s&#227;o possiveis de se colocar na superficie do quadrado ?</hintMessage>
             <hintMessage>Use pombos = 5</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -155,125 +163,6 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>61</uniqueID>
-            <message>
-                <verb>SendNoteProperty</verb>
-                <properties>
-                    <MessageType>CorrectAction</MessageType>
-                    <Selection>
-                        <value>textoResposta</value>
-                    </Selection>
-                    <Action>
-                        <value>SetVisible</value>
-                    </Action>
-                    <Input>
-                        <value>true</value>
-                    </Input>
-                    <transaction_id>08c229dd-317c-2d06-de7c-b8d43ce0f989</transaction_id>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'No_Value' in the highlighted element.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textoResposta</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">SetVisible</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">true</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>12</sourceID>
-        <destID>14</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>66</uniqueID>
-            <message>
-                <verb>SendNoteProperty</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <Selection>
-                        <value>texto</value>
-                    </Selection>
-                    <Action>
-                        <value>SetVisible</value>
-                    </Action>
-                    <Input>
-                        <value>false</value>
-                    </Input>
-                    <transaction_id>c5440f31-af09-eead-2fa3-52d7c7c8602b</transaction_id>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage></successMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">texto</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">SetVisible</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">false</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>1</sourceID>
-        <destID>15</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
             <uniqueID>96</uniqueID>
             <message>
                 <verb>SendNoteProperty</verb>
@@ -293,7 +182,6 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'No_Value' in the highlighted element.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -317,7 +205,7 @@
                         <matcherParameter name="single">true</matcherParameter>
                     </matcher>
                 </Input>
-                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+                <Actor linkTriggered="true">Tutor (unevaluated)</Actor>
             </matchers>
         </actionLabel>
         <preCheckedStatus>No-Applicable</preCheckedStatus>
@@ -325,7 +213,7 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>14</sourceID>
+        <sourceID>12</sourceID>
         <destID>16</destID>
         <traversalCount>0</traversalCount>
     </edge>
@@ -334,12 +222,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>100</uniqueID>
+            <uniqueID>112</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>64227ad5-bc44-e86b-34e6-03d03a790d03</transaction_id>
+                    <transaction_id>818242fc-fbe2-87e8-abbb-1105a2feb22a</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -386,7 +274,67 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>16</sourceID>
-        <destID>17</destID>
+        <destID>20</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>129</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <Selection>
+                        <value>texto</value>
+                    </Selection>
+                    <Action>
+                        <value>SetVisible</value>
+                    </Action>
+                    <Input>
+                        <value>false</value>
+                    </Input>
+                    <transaction_id>37dea8fe-a8b3-a1a2-d04c-e7a33712953a</transaction_id>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'No_Value' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">texto</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">SetVisible</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">false</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>21</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -414,6 +362,8 @@
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage>Correto! Como a superf&#237;cie do quadrado est&#225; divida em 4 (quatro) &#225;reas, usando o principio da casa dos pombos, " n casas = 4 ".</successMessage>
             <hintMessage>Para usar o principio da casa dos pombos no problema, voc&#234; deve saber quem s&#227;o suas "n casas" e quem s&#227;o seus "n+1 pombos".</hintMessage>
+            <hintMessage>Em quantas &#225;reas a superficie do quadrado foi divida?</hintMessage>
+            <hintMessage>Use "n casas = 4".</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -445,8 +395,126 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>15</sourceID>
+        <sourceID>21</sourceID>
         <destID>11</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>139</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>9e93a4ff-339a-c44e-4cb3-c6d5bbb5fb0c</transaction_id>
+                    <Selection>
+                        <value>campoCasas</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextArea</value>
+                    </Action>
+                    <Input>
+                        <value></value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Incorreto!</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please enter '9' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Untraceable Error</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">campoCasas</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextArea</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>21</sourceID>
+        <destID>23</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>145</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>57f0c7e9-e39b-90d3-1259-b3e1f02d89c8</transaction_id>
+                    <Selection>
+                        <value>campoPombos</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextArea</value>
+                    </Action>
+                    <Input>
+                        <value></value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Incorreto!</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please enter '6' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Untraceable Error</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">campoPombos</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextArea</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>11</sourceID>
+        <destID>24</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="false"></EdgesGroups>
