@@ -20,8 +20,6 @@
         }
         .body-initial {background-color: rgb(255, 255, 255); background-image: url("Pombo.jpg"); background-size: auto; background-position: 0% 0%; background-repeat: repeat;
         }
-        .background-initial {background-color: transparent; top: 5px; left: 140px; width: 564px; height: 1095px;
-        }
         .silex-id-1574046585770-1 {top: 40px; left: 40px; height: 100px; width: 480px; background-color: rgb(255, 255, 255);
         }
         .silex-id-1574275460791-3 {top: 720px; left: 40px; height: 100px; width: 480px; background-color: rgb(143, 255, 127);
@@ -29,5 +27,21 @@
         .silex-id-1574046883943-7 {top: 560px; left: 40px; height: 40px; width: 100px; border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);
         }
         .silex-id-1574046899510-9 {top: 640px; left: 40px; height: 40px; width: 100px; background-color: rgb(255, 255, 255);
+        }
+        .background-initial {background-color: transparent; top: 5px; left: 140px; width: 564px; height: 1175px;
+        }
+        .silex-id-1575247227031-3 {top: 20px; left: 60px; height: 100px; width: 340px;
+        }
+        .silex-id-1575247321686-6 {top: 672px; left: 100px; height: 0px; width: 0px; display: none;
+        }
+        .silex-id-1575247579399-9 {top: 80px; left: 160px; height: 1.4em; width: 100px;
+        }
+        .silex-id-1575247982053-11 {top: 40px; left: 40px; height: 1.4em; width: 100px;
+        }
+        .silex-id-1575247984271-12 {top: 40px; left: 220px; height: 1.4em; width: 100px;
+        }
+        .silex-id-1575247998722-14 {top: 60px; left: 260px; height: 1.4em; width: 100px;
+        }
+        .silex-id-1575248066794-17 {top: 40px; left: 20px; height: 1.4em; width: 100px;
         }
     
